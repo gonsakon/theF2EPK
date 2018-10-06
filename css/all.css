@@ -1257,7 +1257,7 @@ body {
         cursor: pointer;
         transition: .3s all;
         writing-mode: vertical-rl; }
-        .h-hero__list li a:hover .p-hero__list__block__img {
+        .h-hero__list li a:hover .h-hero__list__block__img {
           filter: blur(0); }
     .h-hero__list__block {
       font-size: 1.5rem; }
@@ -1292,13 +1292,13 @@ body {
         letter-spacing: 0.5rem; }
       .h-hero__list__block-today {
         color: #3F5D45; }
-        .h-hero__list__block-today .p-hero__list__block__bg {
+        .h-hero__list__block-today .h-hero__list__block__bg {
           background: #ffe180; }
-        .h-hero__list__block-today .p-hero__list__block__img {
+        .h-hero__list__block-today .h-hero__list__block__img {
           background-position: center center; }
-        .h-hero__list__block-today .p-hero__list__block__word {
+        .h-hero__list__block-today .h-hero__list__block__word {
           color: #3F5D45; }
-      .h-hero__list__block-new .p-hero__list__block__img {
+      .h-hero__list__block-new .h-hero__list__block__img {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg); }
 
