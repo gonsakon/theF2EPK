@@ -1,0 +1,56 @@
+.m-card
+  &__col
+    &_4
+      max-width: span(4)
+      flex: 0 0 span(4)
+      +desktop-below
+        max-width: 100%
+        flex: 0 0 100%
+    &_6
+      max-width: span(6)
+      flex: 0 0 span(6)
+      +desktop-below
+        max-width: 100%
+        flex: 0 0 100%
+  &__img
+    height: 19.6875rem
+    position: relative
+    background-size: cover
+    background-position: center center
+    &__tag
+      writing-mode: vertical-lr
+      position: absolute
+      left: 1.25rem
+      top: 0
+      padding: 1rem 0.625rem
+      letter-spacing: 0.3125rem
+      color: $white
+      background-color: #3F5D45
+    &__like
+      position: absolute
+      right: 1.25rem
+      top: 1rem
+      font-size: $font-xl
+      cursor: pointer
+  &__info
+    text-align: center
+    font-size: $font-l
+    border: 1px solid $limeGreen
+    &__title
+      padding: 1rem
+      border-right: 1px solid $limeGreen
+    &__price
+      padding: 1rem
+      font-weight: bold
+  &__addCart
+    &__link
+      background: $limeGreen
+      text-align: center
+      padding: 1.5rem
+      display: block
+      font-size: $font-xl
+      font-weight: bold
+      &:hover,&:active,&:focus
+        background: darken($limeGreen,10%)
+
+      

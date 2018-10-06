@@ -31,6 +31,10 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "gulp-gh-pages": "^0.5.4",
-    "path": "^0.12.7"
+    "gulp-sass": "^4.0.1",
+    "node-sass": "^4.9.3",
+    "path": "^0.12.7",
+    "sass": "^1.14.1",
+    "susy": "^3.0.5"
   }
 }

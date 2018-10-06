@@ -1,0 +1,67 @@
+.l-registered
+  background: $darkGreen
+  margin-top: 3.75rem
+  .col-row
+    width: span(10)
+    margin: 0 auto
+  
+  &__title
+    img 
+      margin-right: $font-xl
+    h3 
+      font-size: $font-xl
+      color: $limeGreen
+      font-family: $font-Neue
+  &__form
+    background: $limeGreen
+    height: 3.5rem
+    max-width: 23.75rem
+    position: relative
+    flex-grow: 1
+    +desktop-below
+      max-width: 100%
+    &__icon 
+      font-size: $font-xl
+      position: absolute
+      top: 1rem
+      left: 1rem
+    &_small &__icon
+        font-size: $font-m
+        top: 1.25rem
+  
+    &__text
+      font-size: $font-xl
+      color: $darkGrayish
+      border: none
+      background: none
+      margin-left: 3rem
+      width: 16.75rem
+      +desktop-below 
+        width: 100%
+    &_small &__text
+      font-size: $font-m
+    &__submit
+      background: $yellow
+      width: 4rem
+      cursor: pointer
+      border: none
+      &:hover,&:active
+        background: darken($yellow,10%)
+.l-footer
+  padding-top: 2rem
+  padding-bottom: 2rem
+  background: $limeGreen
+  .col-row
+    width: span(10)
+    margin: 0 auto
+  &__contact
+    &__logo
+      margin-bottom: 7.5rem
+    &__content
+      a 
+        font-family: $font-Neue
+  &__social
+    li 
+      margin-right: 0.5rem
+  &__copyright
+    font-family: $font-times

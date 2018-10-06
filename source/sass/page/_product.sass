@@ -1,0 +1,40 @@
+.p
+  &-product
+    margin-top: 60px
+    
+    +desktop-below
+      margin: 0
+    &__aside
+      font-weight: bold
+      max-width: span(4)
+      flex: 0 0 span(4)
+      font-size: $font-xl
+      +desktop-below
+        max-width: 100%
+        flex: 0 0 100%
+      &__title
+        background: $darkGreen
+        color: $white
+        text-align: center
+      &__menu
+          text-align: center
+          &_link
+            border: 0.0625px solid $limeGreen
+            margin-bottom: 0.0625px
+            &:hover,&:active,&:focus,&_active
+              background: $limeGreen
+              
+
+    &__list
+      max-width: span(8)
+      flex: 0 0 span(8)
+      +desktop-below
+        max-width: 100%
+        flex: 0 0 100%
+      .m-card
+        flex: 0 0 span(4 of 8)
+        max-width: 0 0 span(4 of 8)
+        +desktop-below
+          flex: 0 0 span(8 of 8)
+          max-width: 0 0 span(8 of 8)
+    

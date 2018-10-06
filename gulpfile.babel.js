@@ -1,14 +1,13 @@
 import gulp from 'gulp';
 import jade from 'gulp-jade';
 import watch from 'gulp-watch';
-import compass from 'gulp-compass';
+import sass from 'gulp-sass';
 import plumber from 'gulp-plumber';
 import webserver from 'gulp-webserver';
 import concat from 'gulp-concat';
 import babel from 'gulp-babel';
 import es2015 from 'babel-preset-es2015';
 import ghPages from 'gulp-gh-pages';
-import path from 'path';
 
 const paths = {
   source: './source',
@@ -20,20 +19,19 @@ const paths = {
 gulp.task('deploy', () => gulp.src('./dist/**/*')
   .pipe(ghPages()));
 
-gulp.task('compass', () => {
+gulp.task('sass', () => {
   gulp.src([`${paths.sassdir}/**/*.scss`, `${paths.sassdir}/**/*.sass`])
     .pipe(plumber())
-    .pipe(compass({
-      config_file: 'config.rb',
-      sourcemap: true,
-      css: './dist/css',
-      sass: './source/sass'
-    }))
+    .pipe(sass({
+      outputStyle: 'nested',
+      includePaths: ['node_modules/susy/sass']
+    }).on('error', sass.logError))
     .pipe(gulp.dest(paths.cssdir));
 });
 
 watch([`${paths.sassdir}/**/*.scss`, `${paths.sassdir}/**/*.sass`], () => {
-  gulp.start('compass');
+  gulp.start('sass');
+  gulp.start('templates');
 });
 
 
@@ -66,7 +64,7 @@ gulp.task('webserver', () => {
   gulp.src('./dist/')
     .pipe(webserver({
       livereload: true,
-      open: false,
+      open: true,
       host: '0.0.0.0',
       port: 12222,
     }));
@@ -82,4 +80,4 @@ gulp.task('scripts', () => {
 watch([`${paths.source}/js/*.js`], () => {
   gulp.start(['scripts']);
 });
-gulp.task('default', ['compass', 'templates', 'webserver', 'scripts']);
+gulp.task('default', ['sass', 'templates', 'webserver', 'scripts']);

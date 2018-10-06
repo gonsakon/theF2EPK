@@ -1,0 +1,89 @@
+.p
+  &-login
+
+    max-width: span(10)
+    flex: 0 0 span(10)
+    margin: 1.875rem auto 0
+    +desktop-below
+      max-width: span(12)
+      flex: 0 0 span(12)
+    +pad-below
+      margin-bottom: -3.75rem
+      margin-top: 0
+    &__account
+      max-width: 50%
+      flex: 0 0 50%
+      background: $darkGreen
+      +pad-below
+        max-width: 100%
+        flex: 0 0 100%
+        order: 2
+      &__block
+        padding-right: 1.875rem
+        padding-left: 1.875rem
+        +pad-below
+          padding-right: 0
+          padding-left: 0
+        &__title
+          font-size: $font-xxl
+          color: $limeGreen
+          text-align: center
+          margin-top: 2.5rem
+          margin-bottom: 2.5rem
+          +pad-below
+            margin-top: 1.875rem
+            margin-bottom: 1.875rem
+        &__checkbox
+          color: $limeGreen
+      &__submit
+        display: block
+        background: $yellow
+        color: $darkGreen
+        font-size: $font-xl
+        font-weight: bold
+        text-align: center
+        &:hover
+          background: darken($yellow,10%)
+
+    &__community
+      max-width: 50%
+      flex: 0 0 50%
+      background: $limeGreen
+      margin-top: 1rem
+      margin-bottom: 1rem
+      padding-left: 1.875rem
+      padding-right: 1.875rem
+      +pad-below
+        order: 1
+        max-width: 100%
+        flex: 0 0 100%
+        padding: 0
+      &__title
+        color: $darkGrayish
+        font-size: $font-xl
+        text-align: center
+        margin-top: 2.5rem
+        margin-bottom: 2.5rem
+        +pad-below
+          display: none
+      &__list
+        +pad-below
+          background: $limeGreen
+          + .l-registered__form
+            margin-top: 1rem
+        li 
+          +pad-below
+            width: 33.333333%
+        a
+          display: flex
+          height: 56px
+          align-items: center
+          justify-content: center
+          background: $white
+          &:hover,&:active,&:focus
+            background: darken($white,10%)
+          img
+            +pad-below
+              max-width: 80%
+            
+          

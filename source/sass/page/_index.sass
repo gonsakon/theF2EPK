@@ -1,0 +1,87 @@
+.p-story
+  margin-top: 5rem
+  +desktop-below
+    margin-top: 3rem
+  +pad-below
+    margin-top: 8rem
+  &__section
+    background: $limeGreen
+    margin-bottom: 8rem
+    +desktop-below
+      margin-bottom: 0rem
+    &-mobile
+      display: none
+      max-width: 50%
+      margin: 0 auto
+    &__img
+      max-width: span(6)
+      flex: 0 0 span(6)
+      position: relative
+      margin-top: -1.5rem
+      margin-bottom: -1.5rem
+      +desktop-below
+        margin: 0
+        margin-bottom: 0
+        flex: 0 0 100%
+        max-width: 100%
+      &__pic
+        height: 100%
+        background-position: center center
+        background-size: cover
+        +desktop-below
+          height: 15.625rem
+    &__content
+      max-width: span(4)
+      flex: 0 0 span(4)
+      position: relative
+      +desktop-below
+        max-width: 100%
+        flex: 0 0 100%
+      &__p
+        writing-mode: vertical-rl
+        height: 30rem
+        
+        padding-top: 4.375rem
+        padding-bottom: 4.375rem
+        line-height: 2.5
+        +desktop-below
+          writing-mode: inherit
+          height: auto 
+          line-height: 1.5
+          padding-top: 1rem
+          padding-bottom: 1rem
+        p 
+          margin-bottom: 2rem
+          margin-left: 2rem
+          color: $darkGrayish
+          +desktop-below
+            margin-right: 1rem
+            margin-left: 1rem
+            margin-bottom: 1rem
+    &__title
+      max-width: span(2)
+      flex: 0 0 span(2)
+      position: relative
+      margin-top: -1.5rem
+      text-align: right
+      +desktop-below
+        display: none
+  
+    &-need
+      .p-story__section__title
+        margin-right: 2rem
+      +desktop-below
+        .p-story__section__img
+          order: 1
+        .p-story__section__content
+          order: 2
+    &__whyNeed
+        &__desktopTitle
+          display: none 
+          margin-top: -2rem
+          margin-bottom: 5rem
+          +desktop-below
+            display: none !important
+
+
+    

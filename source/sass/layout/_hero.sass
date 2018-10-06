@@ -1,0 +1,83 @@
+.h-hero
+  position: relative
+  &__bg
+    height: 496px
+    width: 100%
+    background-position: center center
+    background-size: cover
+    +pad-below
+      height: auto
+      min-height: 17rem
+  &__list
+    max-width: span(10)
+    flex: 0 0 span(10)
+    margin: 0 auto
+    top: -5.625rem
+    position: relative
+    margin-bottom: -5rem
+    +pad-below
+      top: 0
+      max-width: span(12)
+      flex: 0 0 span(12)
+    ul 
+      width: 100%
+    li
+      width: 33.33333%
+      height: 256px
+      a
+        display: block 
+        width: 100%
+        position: relative
+        height: 256px
+        overflow: hidden
+        cursor: pointer
+        transition: .3s all
+        writing-mode: vertical-rl
+        &:hover .p-hero__list__block__img
+          filter: blur(0)
+    &__block
+      font-size: $font-xl
+      &__img
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-size: cover
+        filter: blur(5px)
+        transition: .3s all
+        background-position: center center
+      &__bg
+        background: $darkGreen
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        opacity: 0.8
+      &__word
+        position: relative
+        text-align: center
+        z-index: 99
+        display: flex
+        align-items: center
+        justify-content: center
+        writing-mode: vertical-lr
+        width: 100%
+        color: $white
+        letter-spacing: 0.5rem
+        
+      &-today
+        color: $darkGreen
+        .p-hero__list__block__bg
+          background: $yellow
+        .p-hero__list__block__img
+          // -webkit-transform: rotate(180deg)
+          // transform: rotate(180deg)
+          background-position: center center
+        .p-hero__list__block__word
+          color: $darkGreen
+      &-new
+        .p-hero__list__block__img
+          -webkit-transform: rotate(180deg)
+          transform: rotate(180deg)

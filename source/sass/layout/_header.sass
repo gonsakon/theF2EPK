@@ -1,0 +1,58 @@
+.l-
+  &header
+    &__bars
+      color: $darkGreen
+      display: block
+      font-weight: bold
+      line-height: 5rem
+      height: 5rem
+      padding-left: 3rem
+      padding-right: 3rem
+      transition: 0.3s all
+      &:hover,&:active
+        background: $darkGreen
+        color: $white
+    &__logo
+      width: 219px
+      height: 100px
+      a 
+        display: block
+        background: url(../img/logo-all-dark.svg) no-repeat 50% 50%
+        width: 219px
+        height: 100px
+      +desktop-below
+        margin-left: 1rem
+      +pad-below
+        margin-left: 0
+        width: 114px
+        height: 5rem
+        
+        a 
+          background: url(../img/logotype-sm-dark.svg) no-repeat 50% 50%
+          width: 114px
+          height: 5rem
+
+    &__menu a,&__cart 
+      color: $darkGreen
+      display: block
+      font-weight: bold
+      line-height: 5rem
+      height: 5rem
+      padding-left: 3rem
+      padding-right: 3rem
+      transition: 0.3s all
+      &:hover,&:active
+        background: $darkGreen
+        color: $white
+    &__cart,&__bars
+      +pad-below
+        line-height: 5rem
+        padding-left: 2rem
+        padding-right: 2rem
+        height: 5rem
+    .col-row
+      height: 100px
+      +pad-below
+        height: 5rem
+    .fa-bars
+      cursor: pointer

@@ -1,0 +1,33 @@
+$susy: (
+  'svg-grid-colors': hsl(180, 50%, 80%),
+  'columns': susy-repeat(12),
+  'gutters': 1/3,
+);
+.col-container {
+  max-width: 940px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.col-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@mixin desktop-below{
+  @media (max-width: 1023px) {
+    @content
+  }
+}
+@mixin pad-below{
+  @media (max-width: 767px) {
+    @content
+  }
+}
+@mixin mobile{
+  @media (max-width: 568px) {
+    @content
+  }
+}
+
+
+

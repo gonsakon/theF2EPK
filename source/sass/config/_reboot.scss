@@ -1,0 +1,14 @@
+* { 
+  box-sizing: border-box; 
+}
+html{
+  transition: 0.5s all;
+  color: $darkGreen
+}
+a{
+  text-decoration: none;
+  color: $darkGreen
+}
+input:focus{
+  outline: none;
+}

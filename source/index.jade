@@ -1,5 +1,105 @@
 extends layout.jade
 block content
-	h1 titles
-
-	
+	.h-hero.col-container
+		.col-row
+			.h-hero__bg(style="background-image: url('../img/product/annie-spratt-133872-unsplash.jpg')")
+		.col-row.h-hero__list.justify-content-center
+			ul.h-flex
+				li.h-hero__list__block
+					a.h-hero__list__block-today(href="#")
+						.h-hero__list__block__img(style="background-image:url(./img/product/photo-1490914327627-9fe8d52f4d90.jpeg)")
+						.h-hero__list__block__bg
+						.h-hero__list__block__word 本日精選
+				li.h-hero__list__block
+					a.h-hero__list__block-popular(href="#")
+						.h-hero__list__block__img(style="background-image:url(./img/product/photo-1504114133367-631ecd3db3ca.jpeg)")
+						.h-hero__list__block__bg
+						.h-hero__list__block__word 人氣推薦
+				li.h-hero__list__block
+					a.h-hero__list__block-new(href="#")
+						.h-hero__list__block__img(style="background-image:url(./img/product/photo-1499638472904-ea5c6178a300.jpeg)")
+						.h-hero__list__block__bg
+						.h-hero__list__block__word 新品上市
+	.p-story
+		.p-story__section-mobile.h-lg-block.h-mt-lg-5.h-mb-lg-5
+			img(src="./img/sm-橫式-為什麼選擇了做甜點.svg")
+		.p-story__section
+			.col-container
+				.col-row
+					.p-story__section__img
+						.p-story__section__img__pic(style="background-image: url(https://images.unsplash.com/photo-1519730722595-a5ff788dea4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2712a33fe9b13532f0682ac4e1e749b8&auto=format&fit=crop&w=634&q=80)")
+					.p-story__section__content.h-flex.h-justify-content-end
+						.p-story__section__content__p
+							p
+								| 青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+							p
+								| 是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+					.p-story__section__title
+						img(src="./img/lg-為什麼選擇了做甜點.svg", alt="為什麼選擇了做甜點",width="89",height="307")
+				
+					
+		.p-story__section-mobile.h-none.h-lg-block.h-mt-lg-5.h-mb-lg-5
+			img(src="./img/sm-橫式-為什麼一定要吃甜點.svg")
+		.p-story__section.p-story__section-need.h-mb-lg-5
+			.col-container
+				.col-row
+					.p-story__section__content.h-flex.h-justify-content-end
+						.p-story__section__content__p
+							p
+								| 青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+							p
+								| 是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。
+					.p-story__section__title
+						img(src="./img/lg-為什麼一定要吃甜點.svg", alt="為什麼一定要吃甜點",width="89",height="307")
+					.p-story__section__img
+						.p-story__section__img__pic(style="background-image: url(https://images.unsplash.com/photo-1497052254059-f3e0bf1a5133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce7267675921fc7e41b5610f49750a40&auto=format&fit=crop&w=685&q=80)")
+					
+		.h-flex.h-justify-content-center.p-story__section__whyNeed__desktopTitle
+			img(src="./img/lg-想吃甜點是不需要理由的.svg",width="89",height="327")
+		.p-story__section-mobile.h-lg-block.h-mt-lg-5.h-mb-lg-5
+			img(src="./img/sm-橫式-想吃甜點是不需要理由的.svg")
+		.m-card.col-container
+			ul.h-flex.h-flex-wrap.h-justify-content-between.h-mb-5.h-flex-md-column
+				li.m-card__col_4.h-mb-md-5
+					.m-card__img(style="background-image: url(https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c376ffa487bcd258df29dc881b10703&auto=format&fit=crop&w=700&q=60)")
+						.m-card__img__tag
+							| 本日精選
+						.m-card__img__like
+							i.far.fa-heart
+					.m-card__info.h-flex.h-align-items-stretch
+						.m-card__info__title.h-flex-grow-1 
+							| 焦糖甜甜圈
+						.m-card__info__price 
+							| NT$ 450
+					.m-card__addCart
+						a.e-btn.m-card__addCart__link(href="#")
+							| 加入購物車
+				li.m-card__col_4.h-mb-md-5
+					.m-card__img(style="background-image: url(https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60)")
+						.m-card__img__tag
+							| 本日精選
+						.m-card__img__like
+							i.far.fa-heart
+					.m-card__info.h-flex.h-align-items-stretch
+						.m-card__info__title.h-flex-grow-1 
+							| 焦糖甜甜圈
+						.m-card__info__price 
+							| NT$ 450
+					.m-card__addCart
+						a.e-btn.m-card__addCart__link(href="#")
+							| 加入購物車
+				li.m-card__col_4.h-mb-md-5
+					.m-card__img(style="background-image: url(https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=700&q=60)")
+						.m-card__img__tag
+							| 本日精選
+						.m-card__img__like
+							i.far.fa-heart
+					.m-card__info.h-flex.h-align-items-stretch
+						.m-card__info__title.h-flex-grow-1 
+							| 焦糖甜甜圈
+						.m-card__info__price 
+							| NT$ 450
+					.m-card__addCart
+						a.e-btn.m-card__addCart__link(href="#")
+							| 加入購物車
+			
