@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="img/favicon_48.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>甜點電商</title>
+  <meta property="og:title" content="甜點電商"/>
+  <meta property="og:description" content="六角學院的甜點電商"/>
+  <meta property="og:site_name" content="甜點電商"/>
+  <meta property="og:locale" content="zh_TW"/>
+  <link rel="stylesheet" href="css/all.css?1538914149555"/>
+</head>
+<body>
+  <div class="col-container l-header">
+    <div class="col-row h-align-items-center"><a class="l-header__bars h-none h-md-block"><i class="fas fa-bars h-none h-md-inline"></i></a>
+      <h1 class="l-header__logo"><a href="/index.html" class="h-hideText">logo</a></h1>
+      <ul class="l-header__menu h-ml-auto h-flex-row h-flex h-md-none">
+        <li> <a href="index.html">首頁 </a></li>
+        <li> <a href="product.html">甜點</a></li>
+        <li> <a href="login.html">登入</a></li>
+      </ul><a href="cart.html" class="l-header__cart"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </div>
+  <div class="col-container">
+    <div class="p-checkout h-flex h-justify-content-between h-align-items-start">
+      <div class="p-checkout__form">
+        <div class="p-checkout__form__section">
+          <div class="p-checkout__form__progress h-flex h-justify-content-between h-align-items-center">
+            <h2 class="h-flex-grow-1">發票</h2>
+            <ul class="p-checkout__form__progress__steps h-flex h-justify-content-between h-flex-grow-1">
+              <li><i class="fas fa-check-circle"></i></li>
+              <li><i class="fas fa-check-circle"></i></li>
+              <li><i class="far fa-dot-circle"></i></li>
+            </ul>
+          </div>
+          <ul class="p-checkout__form__btnGroup h-flex h-mb-4">
+            <li class="h-flex-grow-1"><a href="#" class="h-py-2 p-checkout__form__btnGroup_active">電子發票</a></li>
+            <li class="h-flex-grow-1"><a href="#" class="h-py-2">郵寄發票</a></li>
+          </ul>
+          <div class="p-checkout__form__detail h-mb-4">
+            <div class="h-flex h-mb-3">
+              <div class="e-form__group h-px-1 h-flex-grow-1">
+                <label for="email">電子郵件信箱</label>
+                <input type="text" placeholder="example@gmail.com" id="email" class="e-form__control"/>
+              </div>
+            </div>
+            <div class="h-flex h-mb-3"> 
+              <div class="e-form__group h-px-1 h-flex-grow-1">
+                <label for="taxID">統一編號</label>
+                <input type="text" placeholder="34856393" id="taxID" class="e-form__control"/>
+              </div>
+            </div>
+          </div>
+        </div><a href="index.html" class="p-checkout__form__submit h-py-3">確認結帳</a>
+      </div>
+      <div class="p-checkout__orderDetail">
+        <div class="p-checkout__orderDetail__order">
+          <div class="p-checkout__orderDetail__section">
+            <h2 class="p-checkout__orderDetail__section__title h-py-3">訂單摘要</h2>
+            <ul class="p-checkout__orderDetail__section__detail">
+              <li class="p-checkout__orderDetail__section__detail__subTotal h-flex h-justify-content-between"><span>小計 </span><span>NT$ 2,700</span></li>
+              <li class="p-checkout__orderDetail__section__detail__freight h-flex h-justify-content-between"><span>運費</span><span>NT$ 300</span></li>
+              <li class="p-checkout__orderDetail__section__detail__totalPrice h-flex h-justify-content-between"><span>總計</span><span>NT$ 3,000</span></li>
+            </ul>
+          </div>
+          <div class="p-checkout__orderDetail__section">
+            <h2 class="p-checkout__orderDetail__section__title h-py-3">購物清單</h2>
+            <ul class="p-checkout__orderDetail__section__productList">
+              <li class="h-m-3 h-flex">
+                <div style="background-image: url('https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=db0c8e5539456faeca0e49c79e2ccb16&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60')" class="p-checkout__orderDetail__section__productList__img"></div>
+                <div class="p-checkout__orderDetail__section__productList__name h-pl-3 h-pb-2 h-pt-2 h-flex h-flex-column">
+                  <h3>焦糖馬卡龍（2）</h3><span>NT$ 900</span>
+                </div>
+              </li>
+              <li class="h-m-3 h-flex">
+                <div style="background-image: url('https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=db0c8e5539456faeca0e49c79e2ccb16&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60')" class="p-checkout__orderDetail__section__productList__img"></div>
+                <div class="p-checkout__orderDetail__section__productList__name h-pl-3 h-pb-2 h-pt-2 h-flex h-flex-column">
+                  <h3>焦糖馬卡龍（2）</h3><span>NT$ 900</span>
+                </div>
+              </li>
+              <li class="h-m-3 h-flex">
+                <div style="background-image: url('https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=db0c8e5539456faeca0e49c79e2ccb16&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60')" class="p-checkout__orderDetail__section__productList__img"></div>
+                <div class="p-checkout__orderDetail__section__productList__name h-pl-3 h-pb-2 h-pt-2 h-flex h-flex-column">
+                  <h3>焦糖馬卡龍（2）</h3><span>NT$ 900</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-registered">
+    <div class="col-container">
+      <div class="col-row h-flex-lg-column h-pt-4 h-pb-4">
+        <div class="l-registered__title h-flex h-align-items-center h-mb-lg-4"><img src="./img/logo-light.svg" width="40" height="40"/>
+          <h3 class="h-inline">訂閱你我的甜蜜郵件</h3>
+        </div>
+        <form action="/" class="l-registered__form h-flex h-align-content-between"><i class="fas fa-envelope l-registered__form__icon"></i>
+          <input type="text" class="l-registered__form__text"/>
+          <button class="l-registered__form__submit h-ml-auto"><i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="l-footer"> 
+    <div class="col-container"> 
+      <div class="col-row h-mb-4">
+        <div class="l-footer__contact">
+          <div class="l-footer__contact__logo h-mb-md-4"><img src="./img/logotype-lg-dark.svg" width="171" height="26"/></div>
+          <ul class="l-footer__contact__content"> 
+            <li> <a href="tel:+0712345678"> </a>07-1234-5678 </li>
+            <li><a href="mailto:sweetaste@email.com"></a>sweetaste@email.com</li>
+            <li><a href="https://www.google.com.tw/maps/place/800%E9%AB%98%E9%9B%84%E5%B8%82%E6%96%B0%E8%88%88%E5%8D%80/@22.6284345,120.2987625" target="_blank">800 高雄市新興區幸福路 520 號</a></li>
+          </ul>
+        </div>
+        <div class="l-footer__title h-md-none"><img src="./img/footer__title.svg" witdt="59" height="218"/></div>
+      </div>
+      <div class="col-row h-align-items-end h-align-items-md-start h-flex-md-column">
+        <ul class="l-footer__social h-flex h-mb-md-3">
+          <li> <a href="#"><img src="img/ic-line@.svg" width="32" height="32"/></a></li>
+          <li> <a href="#"><img src="img/ic-facebook.svg" width="32" height="32"/></a></li>
+        </ul>
+        <div class="l-footer__copyright">© 2018 Sweetaste* All Rights Reserved</div>
+      </div>
+    </div>
+  </div>
+</body>
