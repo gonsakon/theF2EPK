@@ -1,0 +1,91 @@
+.p
+  &-checkout
+    max-width: span(10)
+    flex: 0 0 span(10)
+    margin: 0 auto
+    +pad-below
+      max-width: 100%
+      flex: 0 0 100%
+      margin-bottom: -3.75rem
+    &__form
+      max-width: span(6 of 10)
+      flex: 0 0 span(6 of 10)
+      background: $darkGreen
+      color: $limeGreen
+      
+      +pad-below
+        max-width: 100%
+        flex: 0 0 100%
+      &__section
+        padding-left: 2.5rem
+        padding-right: 2.5rem
+      &__progress
+        margin-top: 1.875rem
+        margin-bottom: 1.5rem
+        h2
+          font-size: $font-xxl
+          
+        &__steps
+          position: relative
+          li 
+            background: $darkGreen
+            z-index: 2
+          &:after
+            background-color: $white
+            height: 1px
+            content: ""
+            position: absolute
+            top: 50%
+            left: 0
+            right: 0
+            
+            
+      &__submit
+        font-size: $font-xl
+        color: $darkGreen
+        background: $yellow
+        display: block
+        text-align: center
+        font-weight: bold
+        &:hover,&:active,&:focus
+          background: darken($yellow,10%)
+    &__orderDetail
+      max-width: span( 4 of 10)
+      flex: 0 0 span(4 of 10)
+      color: $darkGrayish
+      &__section
+        +pad-below
+          display: none
+        &__title
+          font-size: $font-xl
+          background: $limeGreen
+          border-bottom: 1px solid $limeGreen
+          text-align: center
+          
+        &__detail
+          border: 1px solid $limeGreen
+          margin-bottom: 1rem
+          padding-top: 1rem
+          padding-left: 1rem
+          padding-right: 1rem
+          +mobile 
+            color: $darkGreen
+            
+          li 
+            margin-bottom: 0.5rem
+          &__totalPrice
+            font-weight: bold
+            margin-top: 1rem
+            font-size: $font-l
+        &__productList
+          border: 1px solid $limeGreen
+          &__img
+            flex: 0.9
+            background-position: center center
+            background-size: cover
+          &__name
+            flex: 1
+            span 
+              font-size: $font-l
+              font-weight: bold
+          

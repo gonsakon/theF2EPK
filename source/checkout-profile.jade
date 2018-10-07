@@ -1,0 +1,75 @@
+extends layout.jade
+block content
+  .col-container
+    .p-checkout.h-flex.h-justify-content-between.h-align-items-start
+      .p-checkout__form
+        .p-checkout__form__section
+          .p-checkout__form__progress.h-flex.h-justify-content-between.h-align-items-center
+            h2.h-flex-grow-1 運送
+            ul.p-checkout__form__progress__steps.h-flex.h-justify-content-between.h-flex-grow-1
+              li
+                i.far.fa-dot-circle
+              li
+                i.far.fa-circle
+              li
+                i.far.fa-circle
+          .p-checkout__form__detail.h-mb-4
+            .h-flex.h-mb-3
+              .e-form__group.h-px-1.h-flex-grow-1
+                label(for="firstName") 姓氏
+                input.e-form__control(type="text",placeholder="王",id="firstName")
+              .e-form__group.h-px-1.h-flex-grow-1
+                label(for="lastName") 姓氏
+                input.e-form__control(type="text",placeholder="小明",id="lastName")
+            .h-flex.h-mb-3
+              .e-form__group.h-px-1.h-flex-grow-1
+                label(for="tel") 電話
+                input.e-form__control(type="text",placeholder="0977-333-111",id="tel")
+            .h-flex.h-mb-2.h-align-items-end
+              .e-form__group.h-px-1.h-flex-grow-1
+                label(for="tel") 地址
+                select.e-form__control
+                  option(value="高雄市") 高雄市
+              .e-form__group.h-px-1.h-flex-grow-1
+                select.e-form__control
+                  option(value="前鎮區") 前鎮區
+            .h-flex
+              .e-form__group.h-px-1.h-flex-grow-1
+                input.e-form__control(type="text",placeholder="幸福路",id="road")
+        a.p-checkout__form__submit.h-py-3(href="#")
+          | 下一步
+      .p-checkout__orderDetail
+        .p-checkout__orderDetail__order
+          .p-checkout__orderDetail__section
+            h2.p-checkout__orderDetail__section__title.h-py-3
+              | 訂單摘要
+            ul.p-checkout__orderDetail__section__detail
+              li.p-checkout__orderDetail__section__detail__subTotal.h-flex.h-justify-content-between
+                span 小計 
+                span NT$ 2,700
+              li.p-checkout__orderDetail__section__detail__freight.h-flex.h-justify-content-between
+                span 運費
+                span NT$ 300
+                  
+              li.p-checkout__orderDetail__section__detail__totalPrice.h-flex.h-justify-content-between
+                span 總計
+                span NT$ 3,000
+          .p-checkout__orderDetail__section
+            h2.p-checkout__orderDetail__section__title.h-py-3
+              | 購物清單
+            ul.p-checkout__orderDetail__section__productList
+              li.h-m-3.h-flex
+                .p-checkout__orderDetail__section__productList__img(style="background-image: url('https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60')")
+                .p-checkout__orderDetail__section__productList__name.h-pl-3.h-pb-2.h-pt-2.h-flex.h-flex-column
+                  h3 焦糖馬卡龍（2）
+                  span NT$ 900
+              li.h-m-3.h-flex
+                .p-checkout__orderDetail__section__productList__img(style="background-image: url('https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60')")
+                .p-checkout__orderDetail__section__productList__name.h-pl-3.h-pb-2.h-pt-2.h-flex.h-flex-column
+                  h3 焦糖馬卡龍（2）
+                  span NT$ 900
+              li.h-m-3.h-flex
+                .p-checkout__orderDetail__section__productList__img(style="background-image: url('https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60')")
+                .p-checkout__orderDetail__section__productList__name.h-pl-3.h-pb-2.h-pt-2.h-flex.h-flex-column
+                  h3 焦糖馬卡龍（2）
+                  span NT$ 900
