@@ -1,0 +1,123 @@
+.p
+  &-cart
+    &__productList
+      flex: 0 0 span(8)
+      max-width: span(8)
+      +desktop-below
+        flex: 0 0 span(12)
+        max-width: span(12)
+      &__title
+        font-size: $font-xl
+        font-weight: bold
+        background: $limeGreen
+        text-align: center
+        margin-bottom: 2rem
+      &__section
+        border-bottom: 1px solid $limeGreen
+        +desktop_below
+          margin-bottom: 1rem
+        &__outerBox
+          flex: 4
+          +pad-below
+            margin-bottom: 1rem
+          &__img
+            flex: 0.7
+            background-position: center center
+            background-size: cover
+            +pad-below
+              flex: 1.5
+          &__message
+            flex: 2
+          &__name
+            flex: 1
+            padding: 2rem
+            +pad-below
+              padding: 0 2rem
+            h3
+              font-size: $font-l
+          &__num
+            flex: 1
+            align-items: center
+            span,button
+              background: none
+              padding: 0
+              display: block
+              height: 3rem
+              line-height: 3rem
+              flex: 1
+              border: 1px solid $limeGreen
+              +pad-below
+                flex: 0 0 3rem
+                // width: 3rem
+            button
+              cursor: pointer
+              &:active,&:hover,&:focus
+                background: darken($white,10%)
+                outline: none
+            span
+              margin: 0 -1px
+              text-align: center
+        &__total
+          flex: 1.5
+          +pad-below
+            border-top: 1px solid $limeGreen
+            
+          span 
+            font-size: $font-l
+            font-weight: bold
+          a 
+            +pad-below
+              display: none
+    &__total
+      flex: 0 0 span(4)
+      max-width: span(4)
+      background: $darkGreen
+      
+      +desktop-below
+        flex: 0 0 span(6)
+        max-width: span(6)
+      +mobile
+        padding-left: 0
+        padding-right: 0
+        flex: 0 0 span(12)
+        max-width: span(12)
+        background: none
+        color: $darkGreen
+        margin-bottom: -3.75rem
+      &__title
+        font-size: $font-xl
+        color: $limeGreen
+        border-bottom: 1px solid $limeGreen
+        text-align: center
+        margin-bottom: 1rem
+        margin-right: 1rem
+        margin-left: 1rem
+        +mobile 
+          
+          color: $darkGreen
+          border-bottom: none
+          font-weight: bold
+          background: $limeGreen
+      &__detail
+        color: $limeGreen
+        margin-bottom: 1rem
+        padding-left: 1rem
+        padding-right: 1rem
+        +mobile 
+          color: $darkGreen
+          
+        li 
+          margin-bottom: 0.5rem
+        &__totalPrice
+          font-weight: bold
+          margin-top: 1rem
+          font-size: $font-l
+      &__submit
+        font-size: $font-xl
+        color: $darkGreen
+        background: $yellow
+        display: block
+        text-align: center
+        font-weight: bold
+        &:hover,&:active,&:focus
+          background: darken($yellow,10%)
