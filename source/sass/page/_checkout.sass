@@ -39,7 +39,20 @@
             left: 0
             right: 0
             
-            
+      &__btnGroup
+        a
+          color: $limeGreen
+          border: 1px solid $limeGreen   
+          background: $darkGreen
+          font-size: $font-l
+          display: block
+          text-align: center
+          &:hover,&:active,&:focus
+            background: $limeGreen !important
+            color: $darkGreen !important
+        &_active
+          background: $limeGreen !important
+          color: $darkGreen !important
       &__submit
         font-size: $font-xl
         color: $darkGreen

@@ -5,39 +5,40 @@ block content
       .p-checkout__form
         .p-checkout__form__section
           .p-checkout__form__progress.h-flex.h-justify-content-between.h-align-items-center
-            h2.h-flex-grow-1 運送
+            h2.h-flex-grow-1 付款
             ul.p-checkout__form__progress__steps.h-flex.h-justify-content-between.h-flex-grow-1
               li
-                i.far.fa-dot-circle
+                i.fas.fa-check-circle
               li
-                i.far.fa-circle
+                i.far.fa-dot-circle
               li
                 i.far.fa-circle
           .p-checkout__form__detail.h-mb-4
             .h-flex.h-mb-3
               .e-form__group.h-px-1.h-flex-grow-1
-                label(for="firstName") 姓氏
+                label(for="creditCard") 信用卡卡號
+                input.e-form__control(type="text",placeholder="9012-3456-8901-1234",id="creditCard")
+            .h-flex.h-mb-3.h-align-items-end
+              .e-form__group.h-px-1.h-flex-grow-1
+                label(for="firstName") 持卡人姓名
                 input.e-form__control(type="text",placeholder="王",id="firstName")
               .e-form__group.h-px-1.h-flex-grow-1
-                label(for="lastName") 姓氏
                 input.e-form__control(type="text",placeholder="小明",id="lastName")
+            label.e-form__singleLabel() 有效期限
+            .h-flex.h-mb-3.h-align-items-end
+              
+              .e-form__group.h-px-1.h-flex-grow-1
+                
+                select.e-form__control
+                  option(value="月") 月
+              .e-form__group.h-px-1.h-flex-grow-1
+                select.e-form__control
+                  option(value="年") 年
             .h-flex.h-mb-3
               .e-form__group.h-px-1.h-flex-grow-1
-                label(for="tel") 電話
-                input.e-form__control(type="text",placeholder="0977-333-111",id="tel")
-            .h-flex.h-mb-2.h-align-items-end
-              .e-form__group.h-px-1.h-flex-grow-1
-                label() 地址
-                select.e-form__control
-                  option(value="高雄市") 高雄市
-              .e-form__group.h-px-1.h-flex-grow-1
-                select.e-form__control
-                  option(value="前鎮區") 前鎮區
-            .h-flex
-              .e-form__group.h-px-1.h-flex-grow-1
-                input.e-form__control(type="text",placeholder="幸福路",id="road")
-
-        a.p-checkout__form__submit.h-py-3(href="checkout-payment.html")
+                label(for="last3") 背面末三碼
+                input.e-form__control.e-form__control_half(type="text",placeholder="123",id="last3")
+        a.p-checkout__form__submit.h-py-3(href="checkout-invoice.html")
           | 下一步
       .p-checkout__orderDetail
         .p-checkout__orderDetail__order

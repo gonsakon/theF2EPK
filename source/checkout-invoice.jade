@@ -5,40 +5,30 @@ block content
       .p-checkout__form
         .p-checkout__form__section
           .p-checkout__form__progress.h-flex.h-justify-content-between.h-align-items-center
-            h2.h-flex-grow-1 運送
+            h2.h-flex-grow-1 發票
             ul.p-checkout__form__progress__steps.h-flex.h-justify-content-between.h-flex-grow-1
               li
+                i.fas.fa-check-circle
+              li
+                i.fas.fa-check-circle
+              li
                 i.far.fa-dot-circle
-              li
-                i.far.fa-circle
-              li
-                i.far.fa-circle
+          ul.p-checkout__form__btnGroup.h-flex.h-mb-4
+            li.h-flex-grow-1
+              a.h-py-2.p-checkout__form__btnGroup_active(href="#") 電子發票
+            li.h-flex-grow-1
+              a.h-py-2(href="#") 郵寄發票
           .p-checkout__form__detail.h-mb-4
             .h-flex.h-mb-3
               .e-form__group.h-px-1.h-flex-grow-1
-                label(for="firstName") 姓氏
-                input.e-form__control(type="text",placeholder="王",id="firstName")
+                label(for="email") 電子郵件信箱
+                input.e-form__control(type="text",placeholder="example@gmail.com",id="email")
+            .h-flex.h-mb-3 
               .e-form__group.h-px-1.h-flex-grow-1
-                label(for="lastName") 姓氏
-                input.e-form__control(type="text",placeholder="小明",id="lastName")
-            .h-flex.h-mb-3
-              .e-form__group.h-px-1.h-flex-grow-1
-                label(for="tel") 電話
-                input.e-form__control(type="text",placeholder="0977-333-111",id="tel")
-            .h-flex.h-mb-2.h-align-items-end
-              .e-form__group.h-px-1.h-flex-grow-1
-                label() 地址
-                select.e-form__control
-                  option(value="高雄市") 高雄市
-              .e-form__group.h-px-1.h-flex-grow-1
-                select.e-form__control
-                  option(value="前鎮區") 前鎮區
-            .h-flex
-              .e-form__group.h-px-1.h-flex-grow-1
-                input.e-form__control(type="text",placeholder="幸福路",id="road")
-
-        a.p-checkout__form__submit.h-py-3(href="checkout-payment.html")
-          | 下一步
+                label(for="taxID") 統一編號
+                input.e-form__control(type="text",placeholder="34856393",id="taxID")
+        a.p-checkout__form__submit.h-py-3(href="index.html")
+          | 確認結帳
       .p-checkout__orderDetail
         .p-checkout__orderDetail__order
           .p-checkout__orderDetail__section
